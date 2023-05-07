@@ -14,6 +14,7 @@ public class MySpringApplication {
 
     public static void run(Class configClass,String[] args) {
 
+        //메소드
         System.out.println("MySpringApplication.main args="+ List.of(args));
 
 
