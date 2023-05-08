@@ -19,6 +19,7 @@ public class MySpringApplication {
 
 
         //톰캣 설정
+        //테스트
         Tomcat tomcat = new Tomcat();
         Connector connector = new Connector();
         connector.setPort(8080);
