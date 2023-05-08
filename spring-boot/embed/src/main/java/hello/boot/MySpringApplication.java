@@ -34,6 +34,7 @@ public class MySpringApplication {
 
         //디스패처 서블릿 등록
         Context context = tomcat.addContext("", "/");
+
         tomcat.addServlet("","dispatcher",dispather);
         context.addServletMappingDecoded("/","dispatcher");
         try {
