@@ -8,7 +8,7 @@ public class Ex9 {
         Marine marine = new Marine();
 
         marine.weaponUp();
-
+//
         System.out.println("marine = " + marine);
 
         Marine marine2 = new Marine();
