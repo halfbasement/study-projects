@@ -17,7 +17,7 @@ public class Ex9 {
 
     }
 }
-
+//
 class Marine{
 
     int x=0,y=0;
