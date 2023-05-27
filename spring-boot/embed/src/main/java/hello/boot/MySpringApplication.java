@@ -18,8 +18,6 @@ public class MySpringApplication {
         System.out.println("MySpringApplication.main args="+ List.of(args));
 
 
-        //톰캣 설정
-        //
         Tomcat tomcat = new Tomcat();
         Connector connector = new Connector();
         connector.setPort(8080);
