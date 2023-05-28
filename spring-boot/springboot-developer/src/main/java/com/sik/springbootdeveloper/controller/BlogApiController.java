@@ -3,6 +3,7 @@ package com.sik.springbootdeveloper.controller;
 import com.sik.springbootdeveloper.domain.Article;
 import com.sik.springbootdeveloper.dto.AddArticleRequest;
 import com.sik.springbootdeveloper.dto.ArticleResponse;
+import com.sik.springbootdeveloper.dto.UpdateArticleRequest;
 import com.sik.springbootdeveloper.service.BlogService;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -43,5 +44,22 @@ public class BlogApiController {
         return ResponseEntity.ok()
                 .body(new ArticleResponse(article));
 
+    }
+
+    @DeleteMapping("/api/articles/{id}")
+    public ResponseEntity<Void> deleteArticle(@PathVariable long id){
+
+        blogService.delete(id);
+
+        return new ResponseEntity(HttpStatus.OK);
+    }
+
+
+
+    @PutMapping("/api/articles/{id}")
+    public ResponseEntity<Article> updateArtilces(@PathVariable long id, @RequestBody UpdateArticleRequest request){
+        Article update = blogService.update(id, request);
+
+        return ResponseEntity.ok().body(update);
     }
 }
