@@ -22,4 +22,8 @@ public class BlogService {
     public List<Article> findAll(){
         return blogRepository.findAll();
     }
+
+    public Article findById(long id){//IllegalArgumentException -> 적절하지 못한 인자를 넘겨줬을때 터지는 에러
+        return blogRepository.findById(id).orElseThrow(()->new IllegalArgumentException("not found:" + id));
+    }
 }
