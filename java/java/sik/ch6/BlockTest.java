@@ -7,7 +7,7 @@ public class BlockTest {
     }
 
     {
-        System.out.println("{ }");
+        System.out.println("{생성자블럭 }");
     }
 
     public BlockTest(){
