@@ -1,10 +1,34 @@
-#????? ?? ???
-#???? ? ???
+# 엔드포인트는 크게 활성,비활성화 / 노출 , 비노출
+# 셧다운을 제외한 나머지는 활성화 되어있고 , 비노출 되어있을 뿐이다
 management:
+  info: # 얘는 엔드포인트가 아니고 바로 인포로감
+    java:
+      enabled: true
+    os:
+      enabled: true
+    env:
+      enabled: true
+    git:
+      mode: full
+  server:
+    port: 8080
   endpoint:
     shutdown:
-      enabled: true # ??? ??? ?? ?????? ???
+      enabled: true # 활성
+    health:
+      show-components: always
   endpoints:
     web:
       exposure:
-        include: "*" # ???? ??
+        include: "*" # 전부 노출
+
+
+info:
+  app:
+    name: hello-actuator
+    company: sik
+
+logging:
+  level:
+    hello.controller: debug
+
