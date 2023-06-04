@@ -1,0 +1,10 @@
+# 엔드포인트는 크게 활성,비활성화 / 노출 , 비노출
+# 셧다운을 제외한 나머지는 활성화 되어있고 , 비노출 되어있을 뿐이다
+management:
+  endpoint:
+    shutdown:
+      enabled: true # 활성화
+  endpoints:
+    web:
+      exposure:
+        include: "*" # 전부 노출
