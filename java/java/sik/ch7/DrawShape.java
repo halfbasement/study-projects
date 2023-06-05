@@ -4,7 +4,7 @@ public class DrawShape {
 }
 
 //재작성
-//수요일
+//
 class Shape{
 
 }
