@@ -3,8 +3,7 @@ package sik.ch7;
 public class DrawShape {
 }
 
-//재작성
-//
+
 class Shape{
 
 }
