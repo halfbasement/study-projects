@@ -14,7 +14,7 @@ class Shape{
 
 }
 
-
+//WHEN
 class Point{
     int x;
     int y;
@@ -62,6 +62,6 @@ class Triangle extends Shape{
     }
 
     void draw(){
-        System.out.println("[p1");
+        System.out.println("[p1                                                                                                                                                                                      ");
     }
 }
