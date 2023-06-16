@@ -17,7 +17,7 @@
 
 
     <dependencies>
-        <!--하이버네이트 entity manager 의존성으로 코어를 비롯한 필요한 애들을 끌고옴 -->
+        <!--하이버네이트 entity manager/의존성으로 코어를 비롯한 필요한 애들을 끌고옴 -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
