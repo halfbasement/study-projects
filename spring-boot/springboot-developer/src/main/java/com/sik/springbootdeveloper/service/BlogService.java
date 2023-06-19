@@ -34,7 +34,7 @@ public class BlogService {
     }
 
 
-    //더티체킹
+    //더티체킹 로직체크
     @Transactional
     public Article update(long id, UpdateArticleRequest request){
 
