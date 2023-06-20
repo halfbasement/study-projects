@@ -25,5 +25,4 @@ public class FinalCardTest {
 
     Card c = new Card("HEART",10);
 
-
 }
