@@ -13,6 +13,7 @@ public class JpaMain {
         //code
         em.close();
 
+        //
         emf.close();
 
     }
